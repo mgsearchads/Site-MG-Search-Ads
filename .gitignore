@@ -1,4 +1,9 @@
 node_modules/
 .env
 *.log
+.cursor/
+.DS_Store
+*.swp
+*.swo
+*~
 

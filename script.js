@@ -319,4 +319,17 @@ function initChatbot() {
   });
 
   console.log("[Chatbot] Initialisé ✅");
-}
+}// Calendly -> GTM : déclenche une conversion quand un RDV est confirmé
+window.addEventListener("message", function (e) {
+  // Sécurité : on filtre l'origine
+  if (typeof e.origin === "string" && !e.origin.includes("calendly.com")) return;
+
+  const payload = e.data;
+  const eventName = payload?.event || payload?.name;
+
+  if (eventName === "calendly.event_scheduled") {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: "calendly_event_scheduled" });
+  }
+});
+

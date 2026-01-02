@@ -61,6 +61,36 @@ function openCalendlyModal() {
   if (calendlyModal) {
     calendlyModal.classList.add("active");
     document.body.style.overflow = "hidden";
+    
+    // Initialiser Calendly via l'API officielle
+    initCalendlyWidget();
+  }
+}
+
+function initCalendlyWidget() {
+  const container = document.getElementById("calendly-container");
+  if (!container) return;
+  
+  // Vérifier que le script Calendly est chargé
+  if (typeof Calendly === "undefined") {
+    console.warn("[Calendly] Script non chargé, réessai dans 100ms...");
+    setTimeout(initCalendlyWidget, 100);
+    return;
+  }
+  
+  // N'initialiser qu'une seule fois (éviter les doublons)
+  if (container.hasAttribute("data-calendly-initialized")) {
+    return;
+  }
+  
+  try {
+    Calendly.initInlineWidget({
+      url: "https://calendly.com/mgsearchads/30min",
+      parentElement: container
+    });
+    container.setAttribute("data-calendly-initialized", "true");
+  } catch (error) {
+    console.error("[Calendly] Erreur d'initialisation:", error);
   }
 }
 
@@ -68,6 +98,9 @@ function closeCalendlyModal() {
   if (calendlyModal) {
     calendlyModal.classList.remove("active");
     document.body.style.overflow = "";
+    
+    // Optionnel : nettoyer le widget pour libérer la mémoire
+    // (mais on garde l'initialisation pour éviter les rechargements)
   }
 }
 

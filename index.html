@@ -50,59 +50,166 @@
       <a href="#offre">Offre</a>
       <a href="#refs">Références</a>
       <a href="#faq">FAQ</a>
-      <a class="btn btn-ghost" href="#contact">Contact</a>
     </nav>
   </header>
 
   <main class="container">
     <section class="hero" id="top">
-      <div class="hero-left">
+      <div class="hero-content">
         <p class="pill">Pilotage Google Ads orienté résultats</p>
-        <h1>Le problème n'est pas votre budget. <span class="accent">C'est votre stratégie.</span></h1>
-        <p class="lead">
+        <h1 class="hero-title">Le problème n'est pas votre budget. <span class="accent">C'est votre stratégie.</span></h1>
+        <p class="hero-subtitle">
           MG Search Ads accompagne les entreprises dans la transformation de Google Ads en canal rentable : structure, tracking, messages, enchères, qualité des leads et ROAS.
         </p>
 
-        <div class="cta-row">
-          <button class="btn btn-primary" id="cta_main" data-cta="main">
-            Réserver un appel (30 minutes)
+        <div class="hero-ctas">
+          <button class="btn-hero-primary" id="cta_main" data-cta="main">
+            <img src="logos/MG Search Ads.png" alt="MG Search Ads" class="cta-avatar" />
+            Prendre rendez-vous
           </button>
-          <a class="btn btn-secondary" href="#offre">Voir l'offre</a>
-          <a class="btn btn-secondary" href="mailto:mgsearchads@gmail.com" id="cta_email_hero" data-cta="email-hero">
+          <a href="mailto:mgsearchads@gmail.com" class="btn-hero-secondary" id="cta_email_hero" data-cta="email-hero">
             Envoyer un email
           </a>
         </div>
-
-        <div class="fine">
-          On se cale 30 minutes sur Google Meet ? Je t'envoie l'invitation dès confirmation.
-        </div>
       </div>
+    </section>
 
-      <div class="hero-right">
-        <!-- Assistant Google Ads Widget -->
-        <div class="assistant-widget">
-          <button class="assistant-close" aria-label="Fermer">&times;</button>
-          <div class="assistant-avatar">
-            <div class="robot-icon">🤖</div>
-            <div class="robot-glow"></div>
+    <section class="section" id="refs">
+      <div class="section-head">
+        <h2>Références</h2>
+        <p>Ces entreprises m'ont fait confiance.</p>
+      </div>
+      <div class="refs-marquee-wrapper">
+        <div class="refs-marquee">
+          <div class="refs-marquee-content">
+            <div class="ref-logo"><img src="logos/porsche.png" alt="Porsche" /></div>
+            <div class="ref-logo"><img src="logos/moulinex.png" alt="Moulinex" /></div>
+            <div class="ref-logo"><img src="logos/tefal.png" alt="Tefal" /></div>
+            <div class="ref-logo"><img src="logos/bic.png" alt="BIC" /></div>
+            <div class="ref-logo"><img src="logos/ferrero.png" alt="Ferrero" /></div>
+            <div class="ref-logo"><img src="logos/Micromania.png" alt="Micromania" onerror="this.style.display='none'" /></div>
+            <div class="ref-logo"><img src="logos/bandai-namco.png" alt="Bandai Namco" onerror="this.style.display='none'" /></div>
+            <div class="ref-logo"><img src="logos/idfm.png" alt="Île-de-France Mobilités" onerror="this.style.display='none'" /></div>
+            <div class="ref-logo"><img src="logos/nutella.png" alt="Nutella" onerror="this.style.display='none'" /></div>
+            <div class="ref-logo"><img src="logos/kinder.png" alt="Kinder" onerror="this.style.display='none'" /></div>
           </div>
-          <h3 class="assistant-title">Assistant Google Ads</h3>
-          <p class="assistant-desc">Posez vos questions sur Google Ads, GA4, tracking, campagnes, optimisation...</p>
-          <div class="assistant-input-wrapper">
-            <input type="text" class="assistant-input" placeholder="Sélectionnez votre problème..." readonly />
-            <svg class="assistant-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M6 9l6 6 6-6"/>
-            </svg>
+          <div class="refs-marquee-content" aria-hidden="true">
+            <div class="ref-logo"><img src="logos/porsche.png" alt="Porsche" /></div>
+            <div class="ref-logo"><img src="logos/moulinex.png" alt="Moulinex" /></div>
+            <div class="ref-logo"><img src="logos/tefal.png" alt="Tefal" /></div>
+            <div class="ref-logo"><img src="logos/bic.png" alt="BIC" /></div>
+            <div class="ref-logo"><img src="logos/ferrero.png" alt="Ferrero" /></div>
+            <div class="ref-logo"><img src="logos/Micromania.png" alt="Micromania" onerror="this.style.display='none'" /></div>
+            <div class="ref-logo"><img src="logos/bandai-namco.png" alt="Bandai Namco" onerror="this.style.display='none'" /></div>
+            <div class="ref-logo"><img src="logos/idfm.png" alt="Île-de-France Mobilités" onerror="this.style.display='none'" /></div>
+            <div class="ref-logo"><img src="logos/nutella.png" alt="Nutella" onerror="this.style.display='none'" /></div>
+            <div class="ref-logo"><img src="logos/kinder.png" alt="Kinder" onerror="this.style.display='none'" /></div>
           </div>
         </div>
       </div>
     </section>
 
-
+    <section class="section" id="expertises">
+      <div class="section-head">
+        <h2>Mes <span class="accent">expertises</span> SEA</h2>
+      </div>
+      <div class="expertises-marquee-wrapper">
+        <div class="expertises-marquee">
+          <div class="expertises-marquee-content">
+            <div class="expertise-card">
+              <div class="expertise-icon">🔍</div>
+              <h3>SEARCH</h3>
+              <p>Diffusion d'annonces auprès de personnes à la recherche de vos produits/services</p>
+              <a href="https://support.google.com/google-ads/answer/1722047?hl=fr" target="_blank" rel="noopener" class="btn-expertise" id="expertise-search">En savoir plus</a>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-icon">🛒</div>
+              <h3>SHOPPING</h3>
+              <p>Valorisation de votre catalogue de produits grâce au comparateur de Google.</p>
+              <a href="https://support.google.com/google-ads/answer/2454022?hl=fr" target="_blank" rel="noopener" class="btn-expertise" id="expertise-shopping">En savoir plus</a>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-icon">🖥️</div>
+              <h3>DISPLAY</h3>
+              <p>Intégration de visuels percutants sur des millions d'emplacements en ligne.</p>
+              <a href="https://support.google.com/google-ads/answer/6340491?hl=fr" target="_blank" rel="noopener" class="btn-expertise" id="expertise-display">En savoir plus</a>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-icon">▶️</div>
+              <h3>VIDÉO YOUTUBE</h3>
+              <p>Mise en valeur de votre entreprise et/ou produits/services en vidéos sur Youtube.</p>
+              <a href="https://support.google.com/google-ads/answer/2404190?hl=fr" target="_blank" rel="noopener" class="btn-expertise" id="expertise-youtube">En savoir plus</a>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-icon">⚡</div>
+              <h3>PERFORMANCE MAX</h3>
+              <p>Campagne automatisée qui maximise les performances sur tous les canaux Google.</p>
+              <a href="https://support.google.com/google-ads/answer/10724817?hl=fr" target="_blank" rel="noopener" class="btn-expertise" id="expertise-pmax">En savoir plus</a>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-icon">🎯</div>
+              <h3>DEMAND GEN</h3>
+              <p>Génération de demande sur YouTube, Discover, Gmail et les réseaux sociaux.</p>
+              <a href="https://support.google.com/google-ads/answer/13695777?hl=fr-FR" target="_blank" rel="noopener" class="btn-expertise" id="expertise-demandgen">En savoir plus</a>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-icon">🔎</div>
+              <h3>DISCOVER</h3>
+              <p>Annonces visuelles sur Google Discover pour atteindre de nouveaux clients.</p>
+              <a href="https://support.google.com/google-ads/answer/6341296?hl=fr" target="_blank" rel="noopener" class="btn-expertise" id="expertise-discover">En savoir plus</a>
+            </div>
+          </div>
+          <div class="expertises-marquee-content" aria-hidden="true">
+            <div class="expertise-card">
+              <div class="expertise-icon">🔍</div>
+              <h3>SEARCH</h3>
+              <p>Diffusion d'annonces auprès de personnes à la recherche de vos produits/services</p>
+              <a href="https://support.google.com/google-ads/answer/1722047?hl=fr" target="_blank" rel="noopener" class="btn-expertise" id="expertise-search">En savoir plus</a>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-icon">🛒</div>
+              <h3>SHOPPING</h3>
+              <p>Valorisation de votre catalogue de produits grâce au comparateur de Google.</p>
+              <a href="https://support.google.com/google-ads/answer/2454022?hl=fr" target="_blank" rel="noopener" class="btn-expertise" id="expertise-shopping">En savoir plus</a>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-icon">🖥️</div>
+              <h3>DISPLAY</h3>
+              <p>Intégration de visuels percutants sur des millions d'emplacements en ligne.</p>
+              <a href="https://support.google.com/google-ads/answer/6340491?hl=fr" target="_blank" rel="noopener" class="btn-expertise" id="expertise-display">En savoir plus</a>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-icon">▶️</div>
+              <h3>VIDÉO YOUTUBE</h3>
+              <p>Mise en valeur de votre entreprise et/ou produits/services en vidéos sur Youtube.</p>
+              <a href="https://support.google.com/google-ads/answer/2404190?hl=fr" target="_blank" rel="noopener" class="btn-expertise" id="expertise-youtube">En savoir plus</a>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-icon">⚡</div>
+              <h3>PERFORMANCE MAX</h3>
+              <p>Campagne automatisée qui maximise les performances sur tous les canaux Google.</p>
+              <a href="https://support.google.com/google-ads/answer/10724817?hl=fr" target="_blank" rel="noopener" class="btn-expertise" id="expertise-pmax">En savoir plus</a>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-icon">🎯</div>
+              <h3>DEMAND GEN</h3>
+              <p>Génération de demande sur YouTube, Discover, Gmail et les réseaux sociaux.</p>
+              <a href="https://support.google.com/google-ads/answer/13695777?hl=fr-FR" target="_blank" rel="noopener" class="btn-expertise" id="expertise-demandgen">En savoir plus</a>
+            </div>
+            <div class="expertise-card">
+              <div class="expertise-icon">🔎</div>
+              <h3>DISCOVER</h3>
+              <p>Annonces visuelles sur Google Discover pour atteindre de nouveaux clients.</p>
+              <a href="https://support.google.com/google-ads/answer/6341296?hl=fr" target="_blank" rel="noopener" class="btn-expertise" id="expertise-discover">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="section" id="offre">
       <div class="section-head">
-        <h2>Offre</h2>
+        <h2>Mes services</h2>
         <p class="offer-guide">
           Tu veux des résultats rapidement ? → <strong>Audit</strong>. 
           Tu veux scaler ? → <strong>Pilotage</strong>. 
@@ -112,38 +219,44 @@
 
       <div class="pricing">
         <div class="price-card">
-          <div class="price-top">
-            <h3>Audit du compte Google Ads</h3>
-            <p class="price-hint">Idéal pour repartir propre</p>
+          <div class="price-card-header">
+            <div class="price-card-icon">🎯</div>
+            <div class="price-top">
+              <h3>Création de campagnes</h3>
+            <p class="price-hint">Mise en place complète</p>
             <div class="price-wrapper">
-              <div class="price">350 €</div>
+              <div class="price">À partir de 350 €</div>
               <div class="price-delivery">Livrable sous 7 jours</div>
+            </div>
             </div>
           </div>
           <div class="price-what">
-            <strong>Ce que tu reçois :</strong> Plan d'action + quick wins + priorités
+            <strong>Ce que tu reçois :</strong> Campagnes opérationnelles + structure + annonces + premier mois de Pilotage offert
           </div>
           <ul>
-            <li>Diagnostic structure</li>
-            <li>Analyse requêtes & annonces</li>
-            <li>Plan d'action priorisé</li>
+            <li>Search / PMax / YouTube</li>
+            <li>Display / Discovery</li>
+            <li>Annonces & extensions</li>
           </ul>
-            <div class="price-trust">Google Meet, 30 minutes • Livrables partagés (Doc + checklist)</div>
+          <div class="price-trust">Structure optimisée • Accès requis : Google Ads</div>
           <div class="price-cta">
-            <button class="btn btn-primary" id="cta_audit" data-cta="audit">
-              Voir ce que j'analyse
+            <button class="btn btn-primary" id="cta_creation" data-cta="creation">
+              Discuter de mes besoins
             </button>
           </div>
         </div>
 
         <div class="price-card featured">
           <div class="badge">Le plus choisi</div>
-          <div class="price-top">
-            <h3>Pilotage mensuel</h3>
+          <div class="price-card-header">
+            <div class="price-card-icon">🚀</div>
+            <div class="price-top">
+              <h3>Pilotage mensuel</h3>
             <p class="price-hint">Optimisation continue</p>
             <div class="price-wrapper">
               <div class="price">À partir de 250 €<span class="price-period">/mois</span></div>
               <div class="price-delivery">Optimisations hebdo</div>
+            </div>
             </div>
           </div>
           <div class="price-what">
@@ -163,12 +276,15 @@
         </div>
 
         <div class="price-card">
-          <div class="price-top">
-            <h3>Setup tracking</h3>
+          <div class="price-card-header">
+            <div class="price-card-icon">📊</div>
+            <div class="price-top">
+              <h3>Setup tracking</h3>
             <p class="price-hint">Conversions fiables</p>
             <div class="price-wrapper">
               <div class="price">À partir de 150 €</div>
               <div class="price-delivery">Livrable sous 7 jours</div>
+            </div>
             </div>
           </div>
           <div class="price-what">
@@ -195,83 +311,67 @@
         </div>
         <div class="pricing">
           <div class="price-card">
-            <div class="price-top">
-              <h3>Création de campagnes</h3>
-              <p class="price-hint">Mise en place complète</p>
+            <div class="price-card-header">
+              <div class="price-card-icon">🔍</div>
+              <div class="price-top">
+                <h3>Audit du compte Google Ads</h3>
+              <p class="price-hint">Idéal pour repartir propre</p>
               <div class="price-wrapper">
-                <div class="price">À partir de 350 €</div>
+                <div class="price">350 €</div>
                 <div class="price-delivery">Livrable sous 7 jours</div>
-              </div>
             </div>
-            <div class="price-what">
-              <strong>Ce que tu reçois :</strong> Campagnes opérationnelles + structure + annonces + premier mois de Pilotage offert
-            </div>
-            <ul>
-              <li>Search / PMax / YouTube</li>
-              <li>Display / Discovery</li>
-              <li>Annonces & extensions</li>
-            </ul>
-            <div class="price-trust">Structure optimisée • Accès requis : Google Ads</div>
-            <div class="price-cta">
-              <button class="btn btn-primary" id="cta_creation" data-cta="creation">
-                Discuter de mes besoins
-              </button>
             </div>
           </div>
+          <div class="price-what">
+            <strong>Ce que tu reçois :</strong> Plan d'action + quick wins + priorités
+          </div>
+          <ul>
+            <li>Diagnostic structure</li>
+            <li>Analyse requêtes & annonces</li>
+            <li>Plan d'action priorisé</li>
+          </ul>
+            <div class="price-trust">Google Meet, 30 minutes • Livrables partagés (Doc + checklist)</div>
+          <div class="price-cta">
+            <button class="btn btn-primary" id="cta_audit" data-cta="audit">
+              Voir ce que j'analyse
+            </button>
+          </div>
+        </div>
 
           <div class="price-card">
-            <div class="price-top">
-              <h3>Création de site internet</h3>
+            <div class="price-card-header">
+              <div class="price-card-icon">🌐</div>
+              <div class="price-top">
+                <h3>Création de site internet</h3>
               <p class="price-hint">Site web sur mesure</p>
               <div class="price-wrapper">
                 <div class="price">Sur devis</div>
                 <div class="price-delivery">Livrable selon projet</div>
-              </div>
             </div>
-            <div class="price-what">
-              <strong>Ce que tu reçois :</strong> Site web complet + intégration tracking
-            </div>
-            <ul>
-              <li>Design moderne & responsive</li>
-              <li>Intégration Google Ads</li>
-              <li>Tracking configuré</li>
-            </ul>
-            <div class="price-trust">Optimisé pour conversions • Accès requis : Google Ads</div>
-            <div class="price-cta">
-              <button class="btn btn-primary" id="cta_website" data-cta="website">
-                Discuter de mon projet
-              </button>
-              <a class="btn btn-secondary" href="mailto:mgsearchads@gmail.com" id="cta_website_email" data-cta="website-email">
-                Faire une demande de devis par mail
-              </a>
             </div>
           </div>
+          <div class="price-what">
+            <strong>Ce que tu reçois :</strong> Site web complet + intégration tracking
+          </div>
+          <ul>
+            <li>Design moderne & responsive</li>
+            <li>Intégration Google Ads</li>
+            <li>Tracking configuré</li>
+          </ul>
+          <div class="price-trust">Optimisé pour conversions • Accès requis : Google Ads</div>
+          <div class="price-cta">
+            <button class="btn btn-primary" id="cta_website" data-cta="website">
+              Discuter de mon projet
+            </button>
+            <a class="btn btn-secondary" href="mailto:mgsearchads@gmail.com" id="cta_website_email" data-cta="website-email">
+              Faire une demande de devis par mail
+            </a>
+          </div>
+        </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="refs">
-      <div class="section-head">
-        <h2>Références</h2>
-        <p>Quelques entreprises avec lesquelles j'ai travaillé.</p>
-      </div>
-      <ul class="refs-list">
-        <li>Porsche</li>
-        <li>Moulinex</li>
-        <li>Tefal</li>
-        <li>BIC</li>
-        <li>Nutella</li>
-        <li>Kinder</li>
-        <li>Ferrero</li>
-        <li>IDFM</li>
-        <li>Eat Natural</li>
-        <li>Micromania-Zing</li>
-        <li>Delacre</li>
-        <li>Lagostina</li>
-        
-        
-      </ul>
-    </section>
 
     <section class="section" id="faq">
       <div class="faq-problems-wrapper">
@@ -370,26 +470,6 @@
     </section>
 
     <section class="section" id="contact">
-      <div class="contact card">
-        <h2>On en parle ?</h2>
-        <p>
-          Dis-moi où tu en es (budget, objectif, contexte) et je te dis en 2 minutes si je peux aider et comment.
-        </p>
-
-        <div class="cta-row">
-          <button class="btn btn-primary" id="cta_footer" data-cta="footer">
-            Réserver un appel (30 minutes)
-          </button>
-          <a class="btn btn-ghost" href="mailto:mgsearchads@gmail.com" id="cta_email" data-cta="email">
-            Envoyer un email
-          </a>
-        </div>
-
-        <div class="fine">
-          📍 Lyon · 💻 Visio : Google Meet · 📧 mgsearchads@gmail.com
-        </div>
-      </div>
-
       <!-- Section Prêt à transformer -->
       <div class="transform-section">
         <div class="transform-left">
@@ -451,9 +531,14 @@
     </div>
   </div>
 
-  <button class="sticky-cta" id="cta_sticky" data-cta="sticky">
-    Réserver un appel
-  </button>
+  <div class="sticky-cta-wrapper">
+    <button class="sticky-cta sticky-cta-primary" id="cta_sticky" data-cta="sticky">
+      Réserver un appel
+    </button>
+    <a class="sticky-cta sticky-cta-secondary" href="mailto:mgsearchads@gmail.com" id="cta_sticky_email" data-cta="sticky-email">
+      Envoyer un mail
+    </a>
+  </div>
 
   <!-- Chatbot -->
   <div id="chatbot-container" class="chatbot-container">

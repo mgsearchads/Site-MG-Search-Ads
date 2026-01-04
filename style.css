@@ -787,6 +787,10 @@
     font-weight: 700;
     background: rgba(0,0,0,0.06);
     border:1px solid rgba(255,255,255,0.08);
+    z-index: 1;
+  }
+  .price-card.featured .price-card-header{
+    padding-right: 100px;
   }
   
   /* Section Expertises SEA - Marquee coulissant */
@@ -1352,6 +1356,9 @@
     .price-card{
       padding: 20px;
     }
+    .price-card.featured .price-card-header{
+      padding-right: 90px;
+    }
     .price-card .price-top h3{
       font-size: 17px;
     }
@@ -1363,6 +1370,12 @@
     }
     .price-card-icon{
       font-size: 40px;
+    }
+    .badge{
+      top: 10px;
+      right: 10px;
+      padding: 5px 8px;
+      font-size: 11px;
     }
   }
 

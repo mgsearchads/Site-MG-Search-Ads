@@ -14,6 +14,7 @@ function initApp() {
 
   // Initialisation des modules
   initCalendlyModal();
+  initCalendlyInline();
   setupCtaListeners();
   // initChatbot(); // DÉSACTIVÉ
 }
@@ -101,6 +102,47 @@ function closeCalendlyModal() {
     
     // Optionnel : nettoyer le widget pour libérer la mémoire
     // (mais on garde l'initialisation pour éviter les rechargements)
+  }
+}
+
+// ============================================
+// Calendly Inline (section contact)
+// ============================================
+function initCalendlyInline() {
+  const container = document.getElementById("calendly-inline");
+  if (!container) return;
+
+  // Vérifier que le script Calendly est chargé
+  if (typeof Calendly === "undefined") {
+    console.warn("[Calendly Inline] Script non chargé, réessai dans 100ms...");
+    setTimeout(initCalendlyInline, 100);
+    return;
+  }
+
+  // N'initialiser qu'une seule fois (éviter les doublons)
+  if (container.hasAttribute("data-calendly-initialized")) {
+    return;
+  }
+
+  try {
+    Calendly.initInlineWidget({
+      url: "https://calendly.com/mgsearchads/30min",
+      parentElement: container,
+      prefill: {},
+      utm: {}
+    });
+    container.setAttribute("data-calendly-initialized", "true");
+    
+    // Forcer la hauteur automatique après chargement
+    setTimeout(() => {
+      const iframe = container.querySelector('iframe');
+      if (iframe) {
+        iframe.style.minHeight = '1200px';
+        iframe.style.height = 'auto';
+      }
+    }, 1000);
+  } catch (error) {
+    console.error("[Calendly Inline] Erreur d'initialisation:", error);
   }
 }
 

@@ -1002,6 +1002,23 @@
       gap: 40px;
     }
   }
+  .trust-subtitle{
+    text-align: center;
+    font-size: 15px;
+    color: var(--muted);
+    margin: 24px 0 0;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (max-width: 520px){
+    .trust-subtitle{
+      font-size: 14px;
+      margin-top: 20px;
+      padding: 0 16px;
+    }
+  }
   .ref-pill{
     padding:10px 12px; border-radius: 999px;
     border:1px solid rgba(255,255,255,0.08);
@@ -1069,6 +1086,24 @@
   }
   .legal-content p:last-child{
     margin-bottom: 0;
+  }
+  .legal-content h2{
+    margin: 32px 0 16px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .legal-content h2:first-of-type{
+    margin-top: 24px;
+  }
+  .legal-content ul{
+    margin: 12px 0 20px;
+    padding-left: 24px;
+    list-style-type: disc;
+  }
+  .legal-content li{
+    margin: 8px 0;
+    line-height: 1.7;
   }
   .legal-content strong{
     color: var(--text);
@@ -1472,26 +1507,80 @@
   }
 
   /* Calendly inline section */
-  .calendly-inline-section{
+  .contact-content{
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 32px;
     margin-top: 32px;
+    align-items: start;
+  }
+  .calendly-inline-wrapper{
+    width: 100%;
+    overflow: visible;
+  }
+  .calendly-inline{
+    min-height: 1200px;
+    width: 100%;
+    overflow: visible;
+  }
+  .call-process{
+    padding: 24px;
     background: var(--card);
     border: 1px solid var(--border);
     border-radius: var(--radius);
-    padding: 20px;
-    box-shadow: var(--shadow);
+    position: sticky;
+    top: 100px;
   }
-  .calendly-inline-section iframe{
-    width: 100%;
-    height: 700px;
-    border: none;
+  .call-process h3{
+    margin: 0 0 16px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .call-process ol{
+    margin: 0 0 16px;
+    padding-left: 24px;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+  .call-process li{
+    margin: 8px 0;
+  }
+  .call-process p{
+    margin: 0;
+    font-size: 15px;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+  @media (max-width: 980px){
+    .contact-content{
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    .call-process{
+      position: static;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+  @media (max-width: 768px){
+    .calendly-inline{
+      min-height: 1000px;
+    }
   }
   @media (max-width: 520px){
-    .calendly-inline-section{
-      padding: 12px;
+    .contact-content{
       margin-top: 24px;
+      gap: 20px;
     }
-    .calendly-inline-section iframe{
-      height: 600px;
+    .calendly-inline{
+      min-height: 900px;
+    }
+    .call-process{
+      padding: 20px;
+    }
+    .call-process h3{
+      font-size: 18px;
     }
   }
 

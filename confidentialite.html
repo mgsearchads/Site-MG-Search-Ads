@@ -37,11 +37,94 @@
         <div class="legal-content">
           <p><strong>🔐 POLITIQUE DE CONFIDENTIALITÉ</strong></p>
           
-          <p>MG Search Ads met en œuvre les mesures techniques et organisationnelles nécessaires pour garantir la sécurité des données personnelles.</p>
+          <p>Dernière mise à jour : <span id="privacy-date"></span></p>
           
-          <p><strong>9. Modification</strong></p>
+          <p>MG Search Ads s'engage à protéger la confidentialité de vos données personnelles. Cette politique explique comment nous collectons, utilisons et protégeons vos informations.</p>
           
-          <p>La présente politique peut être modifiée à tout moment afin de rester conforme à la législation en vigueur. Pour toute question, contactez-nous au <strong>02 12 92</strong> ou par email à mgsearchads@gmail.com.</p>
+          <h2>1. Responsable du traitement</h2>
+          <p>Le responsable du traitement des données est :</p>
+          <ul>
+            <li>MG Search Ads</li>
+            <li>Mike Godard</li>
+            <li>Email : mgsearchads@gmail.com</li>
+            <li>SIRET : 850 179 193 00022</li>
+          </ul>
+          
+          <h2>2. Données collectées</h2>
+          <p>Nous collectons les données suivantes :</p>
+          <ul>
+            <li><strong>Données de contact :</strong> nom, prénom, email, numéro de téléphone (via Calendly lors de la réservation d'un rendez-vous)</li>
+            <li><strong>Données de navigation :</strong> adresse IP, type de navigateur, pages consultées (via Google Tag Manager et Google Analytics si activé)</li>
+            <li><strong>Données de communication :</strong> échanges par email ou lors d'appels</li>
+          </ul>
+          
+          <h2>3. Finalités du traitement</h2>
+          <p>Vos données sont utilisées pour :</p>
+          <ul>
+            <li>Gérer les rendez-vous et la relation client</li>
+            <li>Répondre à vos demandes et questions</li>
+            <li>Améliorer nos services et notre site web</li>
+            <li>Respecter nos obligations légales</li>
+          </ul>
+          
+          <h2>4. Base légale</h2>
+          <p>Le traitement de vos données repose sur :</p>
+          <ul>
+            <li>Votre consentement (formulaires, cookies)</li>
+            <li>L'exécution d'un contrat ou de mesures précontractuelles (prise de rendez-vous)</li>
+            <li>Notre intérêt légitime (amélioration du site, statistiques)</li>
+          </ul>
+          
+          <h2>5. Conservation des données</h2>
+          <p>Vos données sont conservées :</p>
+          <ul>
+            <li>Données de contact : durée de la relation commerciale + 3 ans</li>
+            <li>Données de navigation : 13 mois maximum (conformément à la CNIL)</li>
+            <li>Données comptables : 10 ans (obligation légale)</li>
+          </ul>
+          
+          <h2>6. Partage des données</h2>
+          <p>Vos données peuvent être partagées avec :</p>
+          <ul>
+            <li><strong>Calendly :</strong> pour la gestion des rendez-vous (conformité RGPD)</li>
+            <li><strong>Google :</strong> pour l'analyse du trafic (Google Analytics, Google Tag Manager) si activé</li>
+            <li>Nos prestataires techniques (hébergement, outils de communication) sous contrat de confidentialité</li>
+          </ul>
+          <p>Nous ne vendons jamais vos données à des tiers.</p>
+          
+          <h2>7. Vos droits</h2>
+          <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+          <ul>
+            <li><strong>Droit d'accès :</strong> obtenir une copie de vos données</li>
+            <li><strong>Droit de rectification :</strong> corriger vos données inexactes</li>
+            <li><strong>Droit à l'effacement :</strong> supprimer vos données (sous certaines conditions)</li>
+            <li><strong>Droit à la limitation :</strong> limiter le traitement de vos données</li>
+            <li><strong>Droit à la portabilité :</strong> récupérer vos données dans un format structuré</li>
+            <li><strong>Droit d'opposition :</strong> vous opposer au traitement de vos données</li>
+            <li><strong>Droit de retirer votre consentement :</strong> à tout moment</li>
+          </ul>
+          <p>Pour exercer ces droits, contactez-nous à : mgsearchads@gmail.com</p>
+          
+          <h2>8. Sécurité</h2>
+          <p>MG Search Ads met en œuvre les mesures techniques et organisationnelles nécessaires pour garantir la sécurité de vos données personnelles :</p>
+          <ul>
+            <li>Chiffrement des communications (HTTPS)</li>
+            <li>Accès sécurisé aux données</li>
+            <li>Sauvegardes régulières</li>
+            <li>Formation à la protection des données</li>
+          </ul>
+          
+          <h2>9. Cookies</h2>
+          <p>Notre site utilise des cookies pour :</p>
+          <ul>
+            <li>Améliorer votre expérience de navigation</li>
+            <li>Analyser le trafic (Google Analytics si activé)</li>
+            <li>Gérer les préférences</li>
+          </ul>
+          <p>Vous pouvez désactiver les cookies via les paramètres de votre navigateur.</p>
+          
+          <h2>10. Modification</h2>
+          <p>La présente politique peut être modifiée à tout moment afin de rester conforme à la législation en vigueur. Pour toute question, contactez-nous au <strong><a href="tel:0771801486">07 71 80 14 86</a></strong> ou par email à mgsearchads@gmail.com.</p>
         </div>
       </div>
     </section>
@@ -59,8 +142,20 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    // Date de dernière mise à jour
+    const privacyDateEl = document.getElementById("privacy-date");
+    if (privacyDateEl) {
+      privacyDateEl.textContent = new Date().toLocaleDateString("fr-FR", { 
+        year: "numeric", 
+        month: "long", 
+        day: "numeric" 
+      });
+    }
+  </script>
 </body>
 </html>
+
 
 
 
